@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.felixchristy.service.model.FAQ" />
+	<class name="com.felixchristy.service.model.impl.FAQImpl" table="FAQ_FAQ">
+		<cache usage="read-write" />
+		<id name="faqId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="question" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="answer" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

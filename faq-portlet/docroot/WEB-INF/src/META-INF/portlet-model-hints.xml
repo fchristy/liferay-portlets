@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.felixchristy.service.model.FAQ">
+		<field name="faqId" type="long" />
+		<field name="question" type="String" />
+		<field name="answer" type="String" />
+	</model>
+</model-hints>
